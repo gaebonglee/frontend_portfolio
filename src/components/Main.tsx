@@ -1,32 +1,22 @@
-import { useState } from "react";
 import "../assets/styles/Main.scss";
+import { useScroll } from "../hooks/useScroll";
 
 export default function Main() {
-  const [isClicked, setIsClicked] = useState(false);
+  const scrollPosition = useScroll();
 
-  const handleClick = () => {
-    setIsClicked(true);
-  };
+  const maxScroll = 500;
+  const progress = Math.min(scrollPosition / maxScroll, 1);
 
   return (
-    <div className="layout">
-      <div className="squre">
-        <div className={`content ${isClicked ? "animate" : ""} `}>
+    <div className="main-container">
+      <div className="background-squre">
+        <div className="content-wrap">
           <div className="title">
-            <div className={`top ${isClicked ? "move-left" : ""}`}>
-              FrontEnd
-            </div>
-            <div className={`bottom ${isClicked ? "move-right" : ""}`}>
-              Developer
-            </div>
+            <div className="top">FrontEnd</div>
+            <div className="bottom">Developer</div>
           </div>
-          <div
-            className={`click--here ${isClicked ? "fade-out" : ""}`}
-            onClick={handleClick}
-          >
-            click here
-          </div>
-          <a className={`name ${isClicked ? "fade-out" : ""}`}>Lee ga young</a>
+          <div className="click--here">scroll</div>
+          <div className="name">Lee ga young</div>
         </div>
       </div>
     </div>
