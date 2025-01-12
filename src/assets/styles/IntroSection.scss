@@ -1,0 +1,49 @@
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  .title-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 350px;
+      height: 350px;
+    }
+    p {
+      font-size: 35px;
+      font-weight: 700;
+    }
+  }
+  .text-wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px;
+    position: relative;
+    .greeting,
+    .motivation,
+    .vision {
+      font-weight: 600;
+      width: 500px;
+      position: absolute;
+      background-color: gray;
+      padding: 10px 15px;
+    }
+    .greeting,
+    .vision {
+      top: 0;
+      left: -100px;
+      border-radius: 35px 35px 35px 5px;
+    }
+    .motivation {
+      top: 0;
+      right: -100px;
+      border-radius: 35px 35px 5px 35px;
+    }
+  }
+}

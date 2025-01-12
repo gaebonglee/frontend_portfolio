@@ -1,8 +1,7 @@
-import AppRoutes from "./routes/AppRoutes";
-
+import Portfolio from "./pages/Portfolio";
 
 function App() {
-  return <AppRoutes/>
+  return <Portfolio />;
 }
 
 export default App;

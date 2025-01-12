@@ -1,0 +1,110 @@
+body {
+  background-color: #65aac2;
+}
+
+.squre--layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.squre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+  background-color: #e7e5d7;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  &.animate {
+    .top {
+      animation: move-left 1.5s forwards;
+    }
+    .bottom {
+      animation: move-right 1.5s forwards;
+    }
+    .click--here {
+      animation: fade-out 1.5s forwards;
+    }
+    .name {
+      animation: fade-out 1.5s forwards;
+    }
+  }
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .top {
+    text-align: left;
+  }
+  .bottom {
+    text-align: right;
+  }
+}
+
+.click--here {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a2a2a2;
+  animation: click--here--effect 1.5s ease infinite;
+  cursor: pointer;
+}
+
+.name {
+  font-weight: 600;
+  text-align: right;
+  position: relative;
+}
+
+// ------------------------ keyframes ------------------------ \\
+
+@keyframes click--here--effect {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes move-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes move-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
