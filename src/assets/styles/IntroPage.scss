@@ -1,22 +1,25 @@
+.introPage {
+  height: 1000vh;
+}
 .intro-expandSquare {
-    z-index: -99;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  z-index: -99;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  background-color: #e7e5d7;
+  animation: expand 1.5s forwards;
+}
+
+@keyframes expand {
+  0% {
     width: 500px;
     height: 500px;
-    background-color: #e7e5d7;
-    animation: expand 1.5s forwards;
   }
-  
-  @keyframes expand {
-    0% {
-      width: 500px;
-      height: 500px;
-    }
-    100% {
-      width: 100vw;
-      height: 100vh;
-    }
+  100% {
+    width: 100vw;
+    height: 100vh;
   }
+}
