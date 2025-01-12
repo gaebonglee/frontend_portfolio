@@ -1,5 +1,8 @@
+import AppRoutes from "./routes/AppRoutes";
+
+
 function App() {
-  return console.log("hello world");
+  return <AppRoutes/>
 }
 
 export default App;
