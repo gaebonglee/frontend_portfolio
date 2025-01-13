@@ -6,6 +6,12 @@
   position: relative;
 }
 
+.sticky-area {
+  height: 300vh;
+  position: sticky;
+  top: 0;
+}
+
 .card-wrap {
   width: 100%;
   display: flex;

@@ -10,9 +10,13 @@ export default function DetailCards() {
     const rotateCards = () => {
       let angle = 0;
       cards.forEach((card, index) => {
-        const rotateAngle = angle - index * 10;
-        card.style.transform = `rotate(${rotateAngle}deg)`;
-        card.style.zIndex = `${cards.length - index}`; 
+        if (card.classList.contains("active")) {
+          card.style.transform = `translateY(-120vh) rotate(-48deg)`;
+        } else {
+          const rotateAngle = angle - index * 10;
+          card.style.transform = `rotate(${rotateAngle}deg)`;
+          card.style.zIndex = `${cards.length - index}`;
+        }
       });
     };
     rotateCards();

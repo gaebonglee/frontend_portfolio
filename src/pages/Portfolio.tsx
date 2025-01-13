@@ -6,8 +6,8 @@ import SkillsSection from "./Skills";
 export default function Portfolio() {
   return (
     <main className="main-container">
-      <MainSection />
-      <AboutSection />
+      {/* <MainSection />
+      <AboutSection /> */}
       <SkillsSection />
     </main>
   );
