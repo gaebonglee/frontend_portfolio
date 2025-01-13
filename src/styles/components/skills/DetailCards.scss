@@ -1,0 +1,22 @@
+.datail-card-container {
+  height: 100vh;
+  background-color: white;
+  flex-basis: 50%;
+  position: relative;
+}
+
+.detail-cards {
+  position: relative;
+}
+
+.detail-card {
+  background-color: bisque;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  font-size: 14px;
+  position: absolute;
+  top: calc(50% - 175px);
+  left: calc(50% - 175px);
+}
