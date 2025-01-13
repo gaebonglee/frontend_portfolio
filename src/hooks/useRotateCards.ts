@@ -1,21 +1,19 @@
 import { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { CardTitle } from "data/CardsText";
+import { CardData, CardCategory } from "data/CardsText";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const useRotateCards = (
   containerRef: React.RefObject<HTMLElement>,
-  setActiveCategory: React.Dispatch<
-    React.SetStateAction<keyof typeof CardTitle>
-  >
+  setActiveCategory: React.Dispatch<React.SetStateAction<CardCategory>>
 ) => {
   useEffect(() => {
     if (!containerRef.current) return;
 
     const cards = containerRef.current.querySelectorAll(".detail-card");
-    const categories = Object.keys(CardTitle) as (keyof typeof CardTitle)[];
+    const categories = Object.keys(CardData) as CardCategory[];
 
     categories.forEach((category, index) => {
       const startOffset = `${index * 50}vh`; // 각 섹션 시작 지점

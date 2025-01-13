@@ -1,5 +1,5 @@
 import "../../styles/components/skills/TitleCards.scss";
-import { CardTitle } from "data/CardsText";
+import { CardData, CardCategory } from "data/CardsText";
 
 function TitleCard({
   title,
@@ -21,20 +21,18 @@ export default function TitleCards({
   activeCategory,
   setActiveCategory,
 }: {
-  activeCategory: keyof typeof CardTitle;
-  setActiveCategory: React.Dispatch<
-    React.SetStateAction<keyof typeof CardTitle>
-  >;
+  activeCategory: CardCategory;
+  setActiveCategory: React.Dispatch<React.SetStateAction<CardCategory>>;
 }) {
   return (
     <div className="title-card-container">
       <div className="title-cards">
-        {Object.entries(CardTitle).map(([key, value]) => (
+        {Object.entries(CardData).map(([key, value]) => (
           <TitleCard
             key={key}
-            title={value[0]}
+            title={value.title}
             isActive={activeCategory === key}
-            onClick={() => setActiveCategory(key as keyof typeof CardTitle)}
+            onClick={() => setActiveCategory(key as CardCategory)}
           />
         ))}
       </div>

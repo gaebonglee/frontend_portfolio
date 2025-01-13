@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import useRotateCards from "hooks/useRotateCards";
-import { CardSubTitle, CardDescription } from "data/CardsText";
+import { CardData, CardCategory } from "data/CardsText";
 import "../../styles/components/skills/DetailCards.scss";
 
 function DetailCard({
@@ -30,22 +30,22 @@ export default function DetailCards({
   activeCategory,
   setActiveCategory,
 }: {
-  activeCategory: keyof typeof CardSubTitle;
-  setActiveCategory: React.Dispatch<
-    React.SetStateAction<keyof typeof CardSubTitle>
-  >;
+  activeCategory: CardCategory;
+  setActiveCategory: React.Dispatch<React.SetStateAction<CardCategory>>;
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useRotateCards(containerRef, setActiveCategory);
 
+  const data = CardData[activeCategory];
+  if (!data) return null;
+
+  const { subtitles, descriptions } = data;
+
   return (
     <div ref={containerRef} className="datail-card-container">
       <div className="datail-cards">
-        <DetailCard
-          subtitles={CardSubTitle[activeCategory]}
-          descriptions={CardDescription[activeCategory]}
-        />
+        <DetailCard subtitles={subtitles} descriptions={descriptions} />
       </div>
     </div>
   );
