@@ -1,0 +1,44 @@
+.section--mainHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container-large.is-full-height.is-center {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 100%;
+}
+.container-large.is-full-height {
+  flex-flow: column;
+  height: 100%;
+}
+.mainHome--textWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+
+  h1 {
+    font-size: 10rem;
+    font-weight: 600;
+    line-height: 1.2;
+    display: block;
+  }
+}
+
+.overflow-hidden.is-absolute {
+  position: absolute;
+  top: 51%;
+  transform: translateY(-50%);
+  p {
+    color: gray;
+  }
+}

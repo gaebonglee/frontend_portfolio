@@ -1,13 +1,10 @@
-import Main from "../components/Main";
-import IntroPage from "./intro/IntroPage";
+import "../styles/Portfolio.scss";
+import Main from "./Main";
 
 export default function Portfolio() {
-
-
   return (
-    <div>
-      <Main/>
-      {/* <IntroPage  />  */}
-    </div>
+    <main className="main-container">
+      <Main />
+    </main>
   );
 }

@@ -122,3 +122,16 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* 전역 scss */
+.padding-global.is-full-height {
+  z-index: 1;
+  flex: 1;
+  height: 100%;
+  text-decoration: none;
+}
+.padding-global {
+  padding-left: 5%;
+  padding-right: 5%;
+  position: relative;
+}
