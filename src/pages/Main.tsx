@@ -3,7 +3,7 @@ import gsap from "gsap";
 // style
 import "../styles/Main.scss";
 
-export default function Main() {
+export default function MainSection() {
   const textRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const lines = textRef.current?.querySelectorAll(".line");
