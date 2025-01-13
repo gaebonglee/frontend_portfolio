@@ -5,21 +5,36 @@ import TitleCards from "components/skills/TitleCards";
 import { CardData, CardCategory } from "data/CardsText";
 import "../styles/Skills.scss";
 
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+const skillScrollKeys = Object.keys(CardData) as CardCategory[];
+
 export default function SkillsSection() {
-  const itemKeys = Object.keys(CardData) as CardCategory[];
-  const { containerRef, scrollState } = useScrollState(itemKeys);
+  const { containerRef, scrollState } = useScrollState(skillScrollKeys);
 
   const [activeCategory, setActiveCategory] = useState<CardCategory>(
     Object.keys(CardData)[0] as CardCategory
   );
 
   useEffect(() => {
-    if (itemKeys.includes(scrollState)) {
-      setActiveCategory(scrollState);
-    } else {
-      setActiveCategory(itemKeys[0]);
+    const cardWrap = containerRef.current?.querySelector(".card-wrap");
+
+    if (cardWrap) {
+      ScrollTrigger.create({
+        trigger: cardWrap,
+        start: "top top", // card-wrap의 상단이 뷰포트 상단에 닿을 때 시작
+        end: "+=100%", // card-wrap이 고정될 스크롤 구간
+        scrub: true, // 스크롤과 동기화
+      });
     }
-  }, [scrollState, itemKeys]);
+
+    return () => {
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    };
+  }, [containerRef]);
 
   return (
     <section className="section--skillsHome" ref={containerRef}>
@@ -42,3 +57,9 @@ export default function SkillsSection() {
     </section>
   );
 }
+//   if (skillScrollKeys.includes(scrollState)) {
+//     setActiveCategory(scrollState);
+//   } else {
+//     setActiveCategory(skillScrollKeys[0]);
+//   }
+// }, [scrollState, skillScrollKeys]);
