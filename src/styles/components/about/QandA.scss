@@ -11,6 +11,7 @@
 
 .container-large.is-full-height2 {
   height: 100%;
+  min-height: 150vh;
   display: block;
   position: relative;
   top: auto;
@@ -23,7 +24,9 @@
   align-items: center;
   position: sticky;
   height: auto;
-  width: 1020px;
+  top: 2rem;
+  bottom: 2rem;
+  width: 1060px;
   margin: 0 auto;
   gap: 1rem;
   .about-wrap-content {
@@ -31,31 +34,35 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
-    gap: 1rem;
+    top: 0;
     width: 100%;
-    overflow: hidden;
   }
 }
 
 .content-question {
+  width: 400px;
   padding: 15px;
+  margin-bottom: 1rem;
   border-radius: 30px 30px 30px 5px;
   background-color: gray;
   color: white;
+  font-size: 18px;
 }
 .content-answer-wrap {
   display: flex;
   justify-content: end;
   align-items: center;
   .content-answer {
+    width: 600px;
     background-color: #65aac2;
     color: white;
     padding: 15px;
     border-radius: 30px 30px 5px 30px;
     line-height: 1.5;
+    font-size: 15px;
   }
   img {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
   }
 }

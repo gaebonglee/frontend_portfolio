@@ -1,0 +1,17 @@
+.section--skillsHome {
+  z-index: 30;
+  background-color: #869a69;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  position: relative;
+}
+
+.card-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+  gap: 2rem;
+  position: relative;
+  overflow: hidden;
+}
