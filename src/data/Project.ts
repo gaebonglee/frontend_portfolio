@@ -21,7 +21,7 @@ export const projects = [
     subTitle: "Trainer Matching Project",
     description: "팀프로젝트로 진행한 회원-트레이너 매칭사이트 입니다.",
     period: "2024.04.01 ~ 2024.05.17",
-    tech: "React, Scss, JavaScript, axios, MySQL",
+    tech: "Figma, React, Scss, JavaScript, MySQL",
     image: "/images/project/TMP.png",
     projectLink:
       "https://gayounglee.notion.site/Trainer-Matching-Project-PPT-6c02aff850184dbeb843dff6fd695f81",
@@ -36,8 +36,8 @@ export const projects = [
     subTitle: "ShoppingMall",
     description:
       "개인프로젝트로 문자인증과 주소찾기 API를 활용한 쇼핑몰 사이트입니다.",
-    period: "2024.05.25 ~ 2024.06.14, 지속 업데이트 예정",
-    tech: "React, Scss, JavaScript, axios, API, MySQL, react(library,hook)",
+    period: "2024.05.25 ~ 2024.06.14 (continue)",
+    tech: "React, Scss, JavaScript, API, MySQL",
     image: "/images/project/TMP.png",
     projectLink:
       "https://gayounglee.notion.site/Luks-PPT-2ecadfde50dd4f1f9fc3e6fe6043708d?pvs=4",
@@ -54,7 +54,7 @@ export const projects = [
     description:
       "웹사이트 기준으로 제작된 포트폴리오 사이트입니다.(반응형 업데이트 예정)",
     period: "2024.08.04 ~ 2024.08.11",
-    tech: "React, TypeScript, Scss, react-hook, react-slick, gsap",
+    tech: "React, TypeScript, Scss, GSAP",
 
     image: "/images/project/TMP.png",
     projectLink: "https://gaebonglee.github.io/gayoung_portfolio/",
