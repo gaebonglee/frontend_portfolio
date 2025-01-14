@@ -1,5 +1,4 @@
 .datail-card-container {
-  height: 100vh;
   background-color: white;
   flex-basis: 50%;
   position: relative;
@@ -10,13 +9,29 @@
 }
 
 .detail-card {
+  height: 100vh;
   background-color: bisque;
   border-radius: 10px;
   width: 200px;
-  height: 200px;
-  padding: 10px;
-  font-size: 14px;
+  height: 300px;
+  padding: 20px;
   position: absolute;
   top: calc(50% - 175px);
   left: calc(50% - 175px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 2px 2px 5px 2px #555555;
+}
+
+.card-item {
+  gap: 10px;
+  .subTitle {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .card-Description {
+    font-size: 15px;
+  }
 }

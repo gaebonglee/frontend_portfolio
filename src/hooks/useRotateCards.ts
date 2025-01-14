@@ -14,36 +14,59 @@ const useRotateCards = (
 
     const cards = containerRef.current.querySelectorAll(".detail-card");
     const categories = Object.keys(CardData) as CardCategory[];
+    
+
+    cards.forEach((card, index) => {
+      gsap.set(card, {
+        rotation: -12 * index,
+        zIndex: categories.length - index,
+        y: 0,
+      });
+    });
 
     categories.forEach((category, index) => {
-      const startOffset = `${index * 50}vh`; // 각 섹션 시작 지점
-      const endOffset = `${(index + 1) * 50}vh`; // 각 섹션 끝 지점
+      const startOffset = `${index * 100}vh`; // 각 섹션 시작 지점
+      const endOffset = `${(index + 1) * 100}vh`; // 각 섹션 끝 지점
 
       ScrollTrigger.create({
         trigger: containerRef.current,
         start: startOffset,
         end: endOffset,
         onEnter: () => {
-          // 카테고리 업데이트
           setActiveCategory(category);
 
           // 현재 카드를 위로 날아가게 애니메이션 실행
           gsap.to(cards[index], {
             y: "-120vh",
             rotation: -48,
-            duration: 0.5,
+            duration: 1,
           });
+
+          for (let i = index + 1; i < categories.length; i++) {
+            gsap.to(cards[i], {
+              rotation: -12 * (i - (index + 1)), // 새로운 각도 계산
+              zIndex: categories.length - (i - index - 1), // 새로운 zIndex 계산
+              duration: 0.5,
+            });
+          }
         },
         onLeaveBack: () => {
           // 이전 카테고리로 돌아갔을 때
-          const prevIndex = Math.max(index - 1, 0);
-          setActiveCategory(categories[prevIndex]);
-
-          gsap.to(cards[prevIndex], {
-            y: "0vh",
-            rotation: 0,
-            duration: 0.5,
-          });
+          if (cards[index]) {
+            gsap.to(cards[index], {
+              y: 0,
+              rotation: -12 * index,
+              duration: 1,
+              zIndex: categories.length - index,
+            });
+          }
+          for (let i = index + 1; i < categories.length; i++) {
+            gsap.to(cards[i], {
+              rotation: -12 * (i - index), // 원래 각도로 복원
+              zIndex: categories.length - (i - index), // 원래 zIndex 복원
+              duration: 0.5,
+            });
+          }
         },
       });
     });

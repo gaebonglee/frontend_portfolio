@@ -6,12 +6,22 @@ import "../../styles/components/skills/DetailCards.scss";
 function DetailCard({
   subtitles,
   descriptions,
+  rotation,
+  zIndex,
 }: {
   subtitles: string[];
   descriptions: string[];
+  rotation: number;
+  zIndex: number;
 }) {
   return (
-    <div className="detail-card">
+    <div
+      className="detail-card"
+      style={{
+        transform: `rotate(${rotation}deg)`,
+        zIndex: zIndex,
+      }}
+    >
       {subtitles.map((subTitle, index) => (
         <div key={index} className="card-item">
           <div className="subTitle">
@@ -37,15 +47,25 @@ export default function DetailCards({
 
   useRotateCards(containerRef, setActiveCategory);
 
-  const data = CardData[activeCategory];
-  if (!data) return null;
-
-  const { subtitles, descriptions } = data;
+  const categories = Object.keys(CardData) as CardCategory[];
 
   return (
     <div ref={containerRef} className="datail-card-container">
       <div className="datail-cards">
-        <DetailCard subtitles={subtitles} descriptions={descriptions} />
+        {categories.map((category, index) => {
+          const data = CardData[category];
+          if (!data) return null;
+
+          return (
+            <DetailCard
+              key={category}
+              subtitles={data.subtitles}
+              descriptions={data.descriptions}
+              rotation={-12 * index} // 초기 회전 각도 설정
+              zIndex={categories.length - index} // 초기 zIndex 설정
+            />
+          );
+        })}
       </div>
     </div>
   );

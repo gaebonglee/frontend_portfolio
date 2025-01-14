@@ -57,9 +57,3 @@ export default function SkillsSection() {
     </section>
   );
 }
-//   if (skillScrollKeys.includes(scrollState)) {
-//     setActiveCategory(scrollState);
-//   } else {
-//     setActiveCategory(skillScrollKeys[0]);
-//   }
-// }, [scrollState, skillScrollKeys]);
