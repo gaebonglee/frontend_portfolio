@@ -1,0 +1,69 @@
+.section--useSkills-Home {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  overflow: hidden; // 변경
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  h1 {
+    width: 100%;
+    color: white;
+    font-size: 48vw;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.useSkills-container {
+  width: 100%;
+  height: 1200vh;
+  .wrapper {
+    position: absolute;
+    top: 0;
+    width: 400vw;
+    height: 100vh;
+    will-change: transform;
+  }
+}
+
+.skill-card {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  overflow: hidden;
+  will-change: transform;
+}
+
+#card-1 {
+  top: 20%;
+  left: 15%;
+}
+#card-2 {
+  top: 30%;
+  left: 40%;
+}
+#card-3 {
+  top: 40%;
+  left: 65%;
+}
+#card-4 {
+  top: 50%;
+  left: 20%;
+}
+#card-5 {
+  top: 60%;
+  left: 50%;
+}
+#card-6 {
+  top: 70%;
+  left: 80%;
+}
+#card-7 {
+  top: 80%;
+  left: 30%;
+}

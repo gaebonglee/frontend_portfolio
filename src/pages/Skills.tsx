@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import useScrollState from "hooks/useScrollState";
 import DetailCards from "components/skills/DetailCards";
-import TitleCards from "components/skills/TitleCards";
 import { CardData, CardCategory } from "data/CardsText";
 import "../styles/Skills.scss";
 
@@ -42,10 +41,6 @@ export default function SkillsSection() {
         <div className="padding-global is-full-height">
           <div className="container-large is-full-height2">
             <div className="card-wrap">
-              <TitleCards
-                activeCategory={activeCategory}
-                setActiveCategory={setActiveCategory}
-              />
               <DetailCards
                 activeCategory={activeCategory}
                 setActiveCategory={setActiveCategory}
