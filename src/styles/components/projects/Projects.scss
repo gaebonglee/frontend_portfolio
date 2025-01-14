@@ -1,134 +1,51 @@
-.porjects-wrap {
+.section--projectsHome {
+  background-color: black;
+  .intro {
+    padding: 20vh 0;
+  }
+  .outro {
+    padding: 40vh 0;
+  }
+}
+.cloumns {
+  width: 100%;
+  max-width: 1200px;
   position: relative;
-  display: inline-block;
-  width: 350px;
-  height: 500px;
+  padding: 20vh 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2vw;
+}
+.cloumn {
+  width: 100%;
+  position: relative;
+  display: grid;
+  gap: 2vw;
+  grid-template-columns: 100%;
+  will-change: transform;
+}
+
+.cloumn--item {
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+.cloumn--item-imgwrap {
+  width: 100%;
+  aspect-ratio: 0.75;
+  height: auto;
+  position: relative;
+  overflow: hidden;
   border-radius: 10px;
-
-  .img-wrap {
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
-    transition: filter 0.3s ease; // 블러 효과 전환
-    border-radius: 10px;
-  }
-
-  .project-wrap-content {
-    user-select: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.75); // 반투명 배경
-    color: white;
-    opacity: 0;
-    pointer-events: none; // 기본 상태에서 마우스 이벤트 차단
-    transition: opacity 0.3s ease; // 투명도 전환
-  }
-
-  &:hover {
-    img {
-      filter: blur(5px); // 블러 처리
-    }
-
-    .project-wrap-content {
-      opacity: 1; // 보이도록 설정
-      pointer-events: auto; // 마우스 이벤트 활성화
-    }
-  }
 }
 
-// --------- project detail --------- \\
-.project-wrap-content--info {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.myWork-wrap {
-  display: flex;
-  justify-content: space-between;
-
-  .myWork {
-    padding: 10px 15px;
-    border-radius: 25px;
-
-    &.true {
-      border: 2px solid white;
-      background-color: blue;
-      color: skyblue;
-    }
-
-    &.false {
-      border: 2px solid white;
-      background-color: rgba(255, 255, 255, 0.212);
-      color: white;
-    }
-  }
-}
-
-.title-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  .title {
-    font-size: 20px;
-  }
-  .subTitle {
-    font-size: 15px;
-  }
-}
-
-.description {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  .description-title {
-    font-size: 15px;
-  }
-  p {
-    font-size: 14px;
-  }
-}
-
-.period-wrap,
-.tech-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 15px;
-  border: 1px solid white;
-  border-radius: 10px;
-  h4 {
-    font-size: 15px;
-  }
-  a {
-    font-size: 12px;
-  }
-}
-
-.link-wrap {
-  display: flex;
-  justify-content: space-around;
-  a {
-    text-decoration: none;
-    color: white;
-    padding: 10px 15px;
-    border: 1px solid white;
-    border-radius: 20px;
-  }
-  a:hover {
-    background-color: white;
-    color: black;
-    transition: 0.5s ease;
-  }
+.cloumn--item-img {
+  position: absolute;
+  top: calc(-1 * 30px);
+  left: calc(-1 * 30px);
+  height: calc(100% + 30px * 2);
+  width: calc(100% + 30px * 2);
+  background-size: cover;
+  background-position: 50% 20%;
+  backface-visibility: hidden;
 }

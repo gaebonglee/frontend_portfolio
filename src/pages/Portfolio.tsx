@@ -7,9 +7,9 @@ import Projects from "components/projects/Projects";
 export default function Portfolio() {
   return (
     <main className="main-container">
-      {/* <MainSection />
+      <MainSection />
       <AboutSection />
-      <UseSkills /> */}
+      <UseSkills />
       <Projects />
     </main>
   );
