@@ -3,6 +3,8 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  position: relative;
+  z-index: 10;
 }
 
 .container-large.is-full-height.is-center {

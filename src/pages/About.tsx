@@ -1,6 +1,6 @@
 // style
 import QandA from "components/about/QandA";
-import "../styles/About.scss";
+import "../styles/pages/About.scss";
 
 export default function AboutSection() {
   return (

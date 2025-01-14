@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 // style
-import "../styles/Main.scss";
+import "../styles/pages/Main.scss";
 
 export default function MainSection() {
   const textRef = useRef<HTMLDivElement>(null);

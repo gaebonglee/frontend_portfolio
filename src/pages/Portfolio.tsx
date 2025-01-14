@@ -1,5 +1,5 @@
 import UseSkills from "components/skills/UseSkills";
-import "../styles/Portfolio.scss";
+import "../styles/pages/Portfolio.scss";
 import AboutSection from "./About";
 import MainSection from "./Main";
 

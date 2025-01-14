@@ -70,7 +70,7 @@ export default function QandA() {
                       ))
                     : AnswerTexts[key]}
                 </div>
-                <img src={`/images/${key}.png`} alt={key} />
+                <img src={`/images/qna/${key}.png`} alt={key} />
               </div>
             </div>
           </div>
