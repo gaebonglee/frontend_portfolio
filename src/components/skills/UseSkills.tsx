@@ -10,13 +10,13 @@ gsap.registerPlugin(ScrollTrigger);
 export default function UseSkills() {
   useEffect(() => {
     const cards = [
-      { id: "#card-1", endTranslateX: -2000, rotate: 45 },
-      { id: "#card-2", endTranslateX: -1700, rotate: -15 },
+      { id: "#card-1", endTranslateX: -200, rotate: 45 },
+      { id: "#card-2", endTranslateX: -1700, rotate: -35 },
       { id: "#card-3", endTranslateX: -1400, rotate: 25 },
       { id: "#card-4", endTranslateX: -1900, rotate: -35 },
       { id: "#card-5", endTranslateX: -1600, rotate: 30 },
-      { id: "#card-6", endTranslateX: -1800, rotate: -20 },
-      { id: "#card-7", endTranslateX: -1500, rotate: 20 },
+      { id: "#card-6", endTranslateX: -1800, rotate: -45 },
+      { id: "#card-7", endTranslateX: -1500, rotate: 50 },
     ];
 
     ScrollTrigger.create({

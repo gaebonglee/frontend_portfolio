@@ -1,5 +1,7 @@
 import "../../styles/components/projects/Projects.scss";
 import { useScrollAnimations } from "../../hooks/useScrollAnimations";
+import { projects } from "data/Project";
+import ProjectDetail from "./ProjectDetail";
 
 export default function Projects() {
   useScrollAnimations(".cloumn", ".cloumn--item-img img");
@@ -7,7 +9,9 @@ export default function Projects() {
   return (
     <section className="section--projectsHome">
       <div className="padding-global is-full-height">
-        <div className="intro"></div>
+        <div className="intro">
+          <h1>PROJECTS</h1>
+        </div>
         <div className="cloumns">
           {[...Array(3)].map((_, colIndex) => (
             <div className="cloumn" key={colIndex}>
@@ -25,7 +29,15 @@ export default function Projects() {
             </div>
           ))}
         </div>
-        <div className="outro"></div>
+        <div className="outro">
+          <div className="text-wrap">
+            <h3>THANK YOU</h3>
+            <p>Made by @geabonglee</p>
+            <div className="link-github">
+              <a href="https://github.com/gaebonglee">Git Hub</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

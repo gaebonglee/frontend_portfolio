@@ -1,12 +1,59 @@
 .section--projectsHome {
   background-color: black;
   .intro {
-    padding: 10vh 0;
+    padding: 20vh 0;
+    h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 3.5rem;
+      font-weight: 600;
+    }
   }
   .outro {
     padding: 40vh 0;
+    .text-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+    }
+    h3 {
+      color: white;
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+    p {
+      color: lightgray;
+      font-size: 1.2rem;
+    }
+    .link-github {
+      border: 1px solid white;
+      border-radius: 10px;
+      padding: 10px;
+      transition: background-color 0.3s ease;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+        color: lightgray;
+        transition: color 0.3s ease;
+      }
+
+      &:hover {
+        background-color: white;
+
+        a {
+          color: black;
+        }
+      }
+    }
   }
 }
+
+// ---------------- cloums ---------------- \\
 .cloumns {
   width: 100%;
   max-width: 1200px;
