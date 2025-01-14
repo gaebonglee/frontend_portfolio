@@ -14,9 +14,11 @@ export default function Projects() {
               {[...Array(3)].map((_, itemIndex) => (
                 <figure className="cloumn--item" key={itemIndex}>
                   <div className="cloumn--item-imgwrap">
-                    <div className="cloumn--item-img">
-                      <img src="/images/project/TMP.png" alt="Project" />
-                    </div>
+                    <img
+                      src="/images/project/TMP.png"
+                      alt="Project"
+                      className="cloumn--item-img"
+                    />
                   </div>
                 </figure>
               ))}

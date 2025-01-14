@@ -1,7 +1,7 @@
 .section--projectsHome {
   background-color: black;
   .intro {
-    padding: 20vh 0;
+    padding: 10vh 0;
   }
   .outro {
     padding: 40vh 0;
@@ -15,6 +15,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2vw;
+  margin: 0 auto;
 }
 .cloumn {
   width: 100%;

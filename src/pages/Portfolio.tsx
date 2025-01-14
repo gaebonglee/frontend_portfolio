@@ -1,8 +1,8 @@
-import UseSkills from "components/skills/UseSkills";
-import "../styles/pages/Portfolio.scss";
-import AboutSection from "./About";
 import MainSection from "./Main";
+import AboutSection from "./About";
+import UseSkills from "components/skills/UseSkills";
 import Projects from "components/projects/Projects";
+import "../styles/pages/Portfolio.scss";
 
 export default function Portfolio() {
   return (
