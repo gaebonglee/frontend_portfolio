@@ -1,4 +1,4 @@
-.section--projectsHome {
+.section--projects-Home {
   background-color: black;
   .intro {
     padding: 20vh 0;
@@ -108,15 +108,22 @@
   background: transparent; // 배경 없음
 }
 
+
+// overlay project detail
 .project-detail-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.75); // 반투명 배경
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .cloumn--item:hover .project-detail-overlay {

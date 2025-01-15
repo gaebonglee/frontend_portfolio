@@ -4,7 +4,7 @@ import "../styles/pages/About.scss";
 
 export default function AboutSection() {
   return (
-    <section className="section--aboutHome">
+    <section className="section--about-Home">
       <div className="section_about">
         <div className="padding-global is-full-height">
           <QandA />

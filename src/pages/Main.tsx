@@ -22,7 +22,7 @@ export default function MainSection() {
     }
   }, []);
   return (
-    <section className="section--mainHome">
+    <section className="section--main-Home">
       <div className="padding-global is-full-height">
         <div className="container-large is-full-height is-center">
           <div className="side--info"></div>

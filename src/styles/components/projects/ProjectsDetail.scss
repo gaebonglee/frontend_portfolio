@@ -1,48 +1,9 @@
-.porjects-wrap {
-  position: relative;
-  display: inline-block;
-  width: 350px;
-  height: 500px;
-  border-radius: 10px;
-
-  .img-wrap {
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
-    transition: filter 0.3s ease;
-    border-radius: 10px;
-  }
-
-  .project-wrap-content {
-    user-select: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.75);
-    color: white;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-  }
-
-  &:hover {
-    img {
-      filter: blur(3px);
-    }
-
-    .project-wrap-content {
-      opacity: 1;
-      pointer-events: auto;
-    }
-  }
+.project-detail-overlay-wrap {
+  // position: relative;
+  // display: inline-block;
+  // width: 350px;
+  // height: 500px;
+  // border-radius: 10px;
 }
 
 // --------- project detail --------- \\

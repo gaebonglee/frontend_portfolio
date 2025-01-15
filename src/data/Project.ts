@@ -125,20 +125,20 @@ export const projects = [
     frontEnd: true,
     backEnd: false,
   },
-  // {
-  //   id: 8,
-  //   title: "To Do List",
-  //   subTitle: "Task Management",
-  //   description:
-  //     "반응형으로 구현한 My To Do List 입니다. 할 일의 추가, 완료, 삭제 가능합니다.",
-  //   period: "2024.07.18 ~ 2024.07.19",
-  //   tech: "HTML5, CSS3, JavaScript",
-  //   image: "/images/project/TMP.png",
-  //   projectLink:
-  //     "https://gaebonglee.github.io/gayoung_portfolio/toDoList/myToDoList.html",
-  //   githubLink: "https://github.com/gaebonglee/toDoList.git",
-  //   design: false,
-  //   frontEnd: true,
-  //   backEnd: false,
-  // },
+  {
+    id: 8,
+    title: "To Do List",
+    subTitle: "Task Management",
+    description:
+      "반응형으로 구현한 My To Do List 입니다. 할 일의 추가, 완료, 삭제 가능합니다.",
+    period: "2024.07.18 ~ 2024.07.19",
+    tech: "HTML5, CSS3, JavaScript",
+    image: "/images/project/TMP.png",
+    projectLink:
+      "https://gaebonglee.github.io/gayoung_portfolio/toDoList/myToDoList.html",
+    githubLink: "https://github.com/gaebonglee/toDoList.git",
+    design: false,
+    frontEnd: true,
+    backEnd: false,
+  },
 ];

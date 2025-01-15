@@ -57,7 +57,7 @@ export default function UseSkills() {
   }, []);
 
   return (
-    <div className="section--useSkills-Home">
+    <section className="section--useSkills-Home">
       <div className="useSkills-container">
         <div className="wrapper">
           <h1>Experience With</h1>
@@ -74,6 +74,6 @@ export default function UseSkills() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
