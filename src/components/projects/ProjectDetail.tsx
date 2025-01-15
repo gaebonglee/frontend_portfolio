@@ -7,7 +7,7 @@ interface ProjectDetailProps {
 
 export default function ProjectDetail({ project }: ProjectDetailProps) {
   return (
-    <>
+    <section className="section--projects-detail-Home">
       <div className="project-detail-overlay-wrap">
         <div className="project-wrap-content--info">
           <div className="myWork-wrap">
@@ -44,6 +44,6 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }

@@ -40,7 +40,11 @@ export default function Projects() {
                     </div>
                     {activeProject === project.id && (
                       <div className="project-detail-overlay">
-                        <ProjectDetail project={project} />
+                        <div className="overlay-content">
+                          <h3>{project.title}</h3>
+                          <p>click</p>
+                        </div>
+                        {/* <ProjectDetail project={project} /> */}
                       </div>
                     )}
                   </div>

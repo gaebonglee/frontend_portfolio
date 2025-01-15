@@ -114,8 +114,8 @@
 // overlay project detail
 .project-detail-overlay {
   width: 100%;
-  aspect-ratio: 0.75;
   height: 100%;
+  aspect-ratio: 0.75;
   position: relative;
   overflow: hidden;
   border-radius: 15px;
@@ -125,4 +125,30 @@
 
 .cloumn--item:hover .cloumn--item-img img {
   filter: blur(5px);
+}
+
+.overlay-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $default-pink;
+  }
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $point-pink;
+  }
 }

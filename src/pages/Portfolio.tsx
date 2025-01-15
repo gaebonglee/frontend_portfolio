@@ -3,17 +3,17 @@ import AboutSection from "./About";
 import UseSkills from "components/skills/UseSkills";
 import Projects from "components/projects/Projects";
 import "../styles/pages/Portfolio.scss";
-import ProjectDetail from "@components/projects/ProjectDetail";
-import Test from "../components/projects/Test";
+import TestPage from "components/projects/TestPage";
+
 
 export default function Portfolio() {
   return (
     <main className="main-container">
       {/* <MainSection />
       <AboutSection />
-      <UseSkills />
-      <Projects /> */}
-      <Test />
+      <UseSkills /> */}
+      <Projects />
+      {/* <TestPage/> */}
     </main>
   );
 }
