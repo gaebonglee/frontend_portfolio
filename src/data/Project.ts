@@ -11,7 +11,6 @@ export interface ProjectType {
   design: boolean;
   frontEnd: boolean;
   backEnd: boolean;
-
 }
 
 export const projects = [
@@ -38,14 +37,13 @@ export const projects = [
       "개인프로젝트로 문자인증과 주소찾기 API를 활용한 쇼핑몰 사이트입니다.",
     period: "2024.05.25 ~ 2024.06.14 (continue)",
     tech: "React, Scss, JavaScript, API, MySQL",
-    image: "/images/project/TMP.png",
+    image: "/images/qna/vision.png",
     projectLink:
       "https://gayounglee.notion.site/Luks-PPT-2ecadfde50dd4f1f9fc3e6fe6043708d?pvs=4",
     githubLink: "https://github.com/gaebonglee/luks.git",
     design: true,
     frontEnd: true,
     backEnd: true,
-
   },
   {
     id: 3,
@@ -62,7 +60,6 @@ export const projects = [
     design: true,
     frontEnd: true,
     backEnd: false,
-
   },
   {
     id: 4,
@@ -79,7 +76,6 @@ export const projects = [
     design: false,
     frontEnd: true,
     backEnd: false,
-
   },
   {
     id: 5,
@@ -96,7 +92,6 @@ export const projects = [
     design: false,
     frontEnd: true,
     backEnd: false,
-
   },
   {
     id: 6,
@@ -113,7 +108,6 @@ export const projects = [
     design: false,
     frontEnd: true,
     backEnd: false,
-
   },
   {
     id: 7,
@@ -130,7 +124,6 @@ export const projects = [
     design: false,
     frontEnd: true,
     backEnd: false,
-
   },
   {
     id: 8,
@@ -147,6 +140,5 @@ export const projects = [
     design: false,
     frontEnd: true,
     backEnd: false,
-
   },
 ];
