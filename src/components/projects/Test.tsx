@@ -1,11 +1,11 @@
 import { ProjectType, projects } from "data/Project";
-import "../../styles/components/projects/ProjectsDetail.scss";
+import "../../styles/components/projects/Test.scss";
 
 interface ProjectDetailProps {
   project: ProjectType;
 }
 
-export default function ProjectDetail({ project }: ProjectDetailProps) {
+export default function Test({ project }: ProjectDetailProps) {
   return (
     <>
       <div className="project-detail-overlay-wrap">

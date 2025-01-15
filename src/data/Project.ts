@@ -50,7 +50,7 @@ export const projects = [
     title: "Portfolio",
     subTitle: "WebSite",
     description:
-      "웹사이트 기준으로 제작된 포트폴리오 사이트입니다.(반응형 업데이트 예정)",
+      "웹사이트 기준으로 제작된 포트폴리오 사이트입니다.(반응형 업데이트 예정),웹사이트 기준으로 제작된 포트폴리오 사이트입니다.(반응형 업데이트 예정)",
     period: "2024.08.04 ~ 2024.08.11",
     tech: "React, TypeScript, Scss, GSAP",
 

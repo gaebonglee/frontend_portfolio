@@ -41,7 +41,7 @@
       a {
         font-weight: 600;
         text-decoration: none;
-        color: #cfa0ab;
+        color: $default-pink;
         transition: color 0.3s ease;
       }
 
@@ -115,7 +115,7 @@
 .project-detail-overlay {
   width: 100%;
   aspect-ratio: 0.75;
-  height: auto;
+  height: 100%;
   position: relative;
   overflow: hidden;
   border-radius: 15px;
