@@ -1,8 +1,7 @@
-import { useRef, useCallback, useEffect, useState } from "react";
+import { useRef, useEffect } from "react";
 import gsap from "gsap";
 
-export function useTransitionPage() {
-  const [selectProject, setSelectProject] = useState<number | null>(null);
+export function useTransitionPage(selectProject: number | null) {
   const transitionRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
