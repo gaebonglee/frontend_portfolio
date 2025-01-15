@@ -98,6 +98,16 @@
   backface-visibility: hidden;
 }
 
+// 배열의 빈 공간 가상 요소 추가
+.cloumn--item.placeholder,
+.cloumn--item-imgwrap.placeholder,
+.cloumn--item-img.placeholder,
+.cloumn--item-img img.placeholder {
+  visibility: hidden; // 보이지 않게 설정
+  pointer-events: none; // 클릭 차단
+  background: transparent; // 배경 없음
+}
+
 .project-detail-overlay {
   position: absolute;
   top: 0;

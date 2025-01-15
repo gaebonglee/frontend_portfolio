@@ -11,7 +11,7 @@ export default function Projects() {
     if (!result[groupIndex]) {
       result[groupIndex] = [];
     }
-    result[groupIndex].push(project); 
+    result[groupIndex].push(project);
     return result;
   }, [] as Array<typeof projects>);
 
@@ -29,6 +29,18 @@ export default function Projects() {
                   <div className="cloumn--item-imgwrap">
                     <div className="cloumn--item-img">
                       <img src={project.image} alt={project.title} />
+                    </div>
+                  </div>
+                </figure>
+              ))}
+              {Array.from({ length: 3 - group.length }).map((_, idx) => (
+                <figure
+                  className="cloumn--item placeholder"
+                  key={`placeholder-${colIndex}-${idx}`}
+                >
+                  <div className="cloumn--item-imgwrap placeholder">
+                    <div className="cloumn--item-img placeholder">
+                      <img className="placeholder" alt="placeholder" />
                     </div>
                   </div>
                 </figure>
