@@ -6,6 +6,15 @@ import ProjectDetail from "./ProjectDetail";
 export default function Projects() {
   useScrollAnimations(".cloumn", ".cloumn--item-img img");
 
+  const groupedProjects = projects.reduce((result, project, index) => {
+    const groupIndex = Math.floor(index / 3);
+    if (!result[groupIndex]) {
+      result[groupIndex] = [];
+    }
+    result[groupIndex].push(project); 
+    return result;
+  }, [] as Array<typeof projects>);
+
   return (
     <section className="section--projectsHome">
       <div className="padding-global is-full-height">
@@ -13,13 +22,13 @@ export default function Projects() {
           <h1>PROJECTS</h1>
         </div>
         <div className="cloumns">
-          {[...Array(3)].map((_, colIndex) => (
+          {groupedProjects.map((group, colIndex) => (
             <div className="cloumn" key={colIndex}>
-              {[...Array(3)].map((_, itemIndex) => (
-                <figure className="cloumn--item" key={itemIndex}>
+              {group.map((project) => (
+                <figure className="cloumn--item" key={project.id}>
                   <div className="cloumn--item-imgwrap">
                     <div className="cloumn--item-img">
-                      <img src="/images/project/TMP.png" alt="Project" />
+                      <img src={project.image} alt={project.title} />
                     </div>
                   </div>
                 </figure>
