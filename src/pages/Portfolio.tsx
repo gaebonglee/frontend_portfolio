@@ -3,8 +3,6 @@ import AboutSection from "./About";
 import UseSkills from "components/skills/UseSkills";
 import Projects from "components/projects/Projects";
 import "../styles/pages/Portfolio.scss";
-import TestPage from "components/projects/TestPage";
-
 
 export default function Portfolio() {
   return (
@@ -13,7 +11,6 @@ export default function Portfolio() {
       <AboutSection />
       <UseSkills /> */}
       <Projects />
-      {/* <TestPage/> */}
     </main>
   );
 }
