@@ -4,7 +4,7 @@ import UseSkills from "components/skills/UseSkills";
 import Projects from "components/projects/Projects";
 import "../styles/pages/Portfolio.scss";
 import ProjectDetail from "@components/projects/ProjectDetail";
-import Test from "@components/projects/test";
+import Test from "../components/projects/Test";
 
 export default function Portfolio() {
   return (
@@ -13,7 +13,7 @@ export default function Portfolio() {
       <AboutSection />
       <UseSkills />
       <Projects /> */}
-      <Test/>
+      <Test />
     </main>
   );
 }

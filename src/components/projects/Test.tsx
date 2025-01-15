@@ -1,49 +1,59 @@
-import { ProjectType, projects } from "data/Project";
 import "../../styles/components/projects/Test.scss";
 
-interface ProjectDetailProps {
-  project: ProjectType;
-}
-
-export default function Test({ project }: ProjectDetailProps) {
+export default function Test() {
   return (
-    <>
-      <div className="project-detail-overlay-wrap">
-        <div className="project-wrap-content--info">
-          <div className="myWork-wrap">
-            <div className={`myWork ${project.design ? "true" : "false"}`}>
-              <a>Design</a>
+    <div className="cloumns">
+      <div className="cloumn">
+        <figure className="cloumn--item">
+          <div className="cloumn--item-imgwrap">
+            <div className="cloumn--item-img">
+              <div className="project-detail-overlay">
+                <div className="project-detail-overlay-wrap">
+                  <div className="project-wrap-content--info">
+                    <div className="content-top">
+                      <div className="myWork-wrap">
+                        <div className="myWork">
+                          <a>Design</a>
+                        </div>
+                        <div className="myWork">
+                          <a>Design</a>
+                        </div>
+                        <div className="myWork">
+                          <a>Design</a>
+                        </div>
+                      </div>
+                      <div className="title-wrap">
+                        <div className="title">타타타타타</div>
+                        <div className="subTitle">타타타타타</div>
+                      </div>
+                    </div>
+
+                    <div className="description">
+                      <ul>
+                        <li>타타타타타</li>
+                      </ul>
+                    </div>
+                    <div className="content-bottom">
+                      <div className="period-wrap">
+                        <h4>Period</h4>
+                        <a>타타타타타</a>
+                      </div>
+                      <div className="tech-wrap">
+                        <h4>Tech</h4>
+                        <a>타타타타타</a>
+                      </div>
+                      <div className="link-wrap">
+                        <a>Demo</a>
+                        <a>Source</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className={`myWork ${project.frontEnd ? "true" : "false"}`}>
-              <a>FrontEnd</a>
-            </div>
-            <div className={`myWork ${project.backEnd ? "true" : "false"}`}>
-              <a>BackEnd</a>
-            </div>
           </div>
-          <div className="title-wrap">
-            <div className="title">{project.title}</div>
-            <div className="subTitle">{project.subTitle}</div>
-          </div>
-          <div className="description">
-            <ul>
-              <li>{project.description}</li>
-            </ul>
-          </div>
-          <div className="period-wrap">
-            <h4>Period</h4>
-            <a>{project.period}</a>
-          </div>
-          <div className="tech-wrap">
-            <h4>Tech</h4>
-            <a>{project.tech}</a>
-          </div>
-          <div className="link-wrap">
-            <a href={project.projectLink}>Demo</a>
-            <a href={project.githubLink}>Source</a>
-          </div>
-        </div>
+        </figure>
       </div>
-    </>
+    </div>
   );
 }
