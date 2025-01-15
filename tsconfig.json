@@ -17,7 +17,10 @@
     "jsx": "react-jsx",
     "baseUrl": "src",
     "paths": {
-      "*": ["*"]
+      "@styles/*": ["styles/*"], // @styles로 'src/styles' 경로 참조
+      "@components/*": ["components/*"], // @components로 'src/components' 경로 참조
+      "@utils/*": ["utils/*"], // @utils로 'src/utils' 경로 참조
+      "@hooks/*": ["hooks/*"] // @hooks로 'src/hooks' 경로 참조
     }
   },
   "include": ["src"]

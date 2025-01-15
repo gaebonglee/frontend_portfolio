@@ -135,3 +135,7 @@ table {
   padding-right: 5%;
   position: relative;
 }
+
+* {
+  user-select: none;
+}
