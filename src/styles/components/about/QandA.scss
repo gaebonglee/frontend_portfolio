@@ -1,9 +1,12 @@
+@import "styles/variables";
+
 .content-title {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 2rem;
   h2 {
+    color: $default-pink;
     font-size: 3.5rem;
     font-weight: 600;
   }
@@ -44,8 +47,8 @@
   padding: 15px;
   margin-bottom: 1rem;
   border-radius: 30px 30px 30px 5px;
-  background-color: gray;
-  color: white;
+  background-color: $purple-gray;
+  color: $default-pink;
   font-size: 18px;
 }
 .content-answer-wrap {
@@ -53,13 +56,14 @@
   justify-content: end;
   align-items: center;
   .content-answer {
-    width: 600px;
-    background-color: #65aac2;
-    color: white;
+    width: auto;
+    background-color: $point-pink;
+    color: $black;
     padding: 15px;
     border-radius: 30px 30px 5px 30px;
     line-height: 1.5;
     font-size: 15px;
+    font-weight: 600;
   }
   img {
     width: 100px;

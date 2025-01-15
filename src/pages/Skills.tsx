@@ -24,9 +24,9 @@ export default function SkillsSection() {
     if (cardWrap) {
       ScrollTrigger.create({
         trigger: cardWrap,
-        start: "top top", // card-wrap의 상단이 뷰포트 상단에 닿을 때 시작
-        end: "+=100%", // card-wrap이 고정될 스크롤 구간
-        scrub: true, // 스크롤과 동기화
+        start: "top top",
+        end: "+=100%", 
+        scrub: true, 
       });
     }
 

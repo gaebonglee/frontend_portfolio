@@ -26,8 +26,9 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
             <div className="subTitle">{project.subTitle}</div>
           </div>
           <div className="description">
-            <div className="description-title">주요 내용</div>
-            <p>{project.description}</p>
+            <ul>
+              <li>{project.description}</li>
+            </ul>
           </div>
           <div className="period-wrap">
             <h4>Period</h4>

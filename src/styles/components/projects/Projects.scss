@@ -8,7 +8,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      color: white;
+      color: $default-pink;
       font-size: 3.5rem;
       font-weight: 600;
     }
@@ -49,7 +49,7 @@
         background-color: #eddae2;
 
         a {
-          color: black;
+          color: $black;
         }
       }
     }
@@ -87,7 +87,7 @@
   height: auto;
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .cloumn--item-img img {
@@ -118,11 +118,11 @@
   height: auto;
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.75);
   color: white;
 }
 
 .cloumn--item:hover .cloumn--item-img img {
-  filter: blur(3px);
+  filter: blur(5px);
 }

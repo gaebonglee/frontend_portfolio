@@ -1,7 +1,10 @@
+@import "styles/variables";
+
 .section--about-Home {
   position: relative;
   top: 0;
   bottom: auto;
+  background-color: $black;
 }
 .section_about {
   height: 200vh;
