@@ -1,5 +1,5 @@
 .section--projects-Home {
-  background-color: gray;
+  background-color: black;
   .intro {
     padding: 20vh 0;
     h1 {
@@ -116,11 +116,11 @@
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
+  user-select: none;
 }
 
-.cloumn--item:hover .project-detail-overlay {
-  opacity: 1;
-  pointer-events: auto;
+.cloumn--item:hover .cloumn--item-img img {
+  filter: blur(3px);
 }

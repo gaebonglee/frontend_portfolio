@@ -34,17 +34,16 @@ export default function Projects() {
                   onMouseEnter={() => setActiveProject(project.id)}
                   onMouseLeave={() => setActiveProject(null)}
                 >
-                  {activeProject === project.id ? (
-                    <div className="project-detail-overlay">
-                      <ProjectDetail project={project} />
+                  <div className="cloumn--item-imgwrap">
+                    <div className="cloumn--item-img">
+                      <img src={project.image} alt={project.title} />
                     </div>
-                  ) : (
-                    <div className="cloumn--item-imgwrap">
-                      <div className="cloumn--item-img">
-                        <img src={project.image} alt={project.title} />
+                    {activeProject === project.id && (
+                      <div className="project-detail-overlay">
+                        <ProjectDetail project={project} />
                       </div>
-                    </div>
-                  )}
+                    )}
+                  </div>
                 </figure>
               ))}
               {/* 프로젝트가 3배수가 아닐 경우 빈 공간 추가 */}
