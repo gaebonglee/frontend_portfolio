@@ -49,7 +49,6 @@ export default function Projects() {
                           <h3>{project.title}</h3>
                           <p>click</p>
                         </div>
-                        {/* <ProjectDetail project={project} /> */}
                       </div>
                     )}
                   </div>
@@ -77,11 +76,9 @@ export default function Projects() {
               project={
                 projects.find((project) => project.id === selectProject)!
               }
+              onClose={() => setSelectProject(null)}
             />
           )}
-          <button className="close-btn" onClick={() => setSelectProject(null)}>
-            Close
-          </button>
         </div>
 
         <div className="outro">

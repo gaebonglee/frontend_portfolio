@@ -3,12 +3,16 @@ import "../../styles/components/projects/ProjectsDetail.scss";
 
 interface ProjectDetailProps {
   project: ProjectType;
+  onClose: () => void;
 }
 
-export default function ProjectDetail({ project }: ProjectDetailProps) {
+export default function ProjectDetail({
+  project,
+  onClose,
+}: ProjectDetailProps) {
   return (
     <section className="section--projects-detail-Home">
-      <div className="project-detail-overlay-wrap">
+      <div className="padding-global is-full-height">
         <div className="project-wrap-content--info">
           <div className="myWork-wrap">
             <div className={`myWork ${project.design ? "true" : "false"}`}>
@@ -42,6 +46,9 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
             <a href={project.projectLink}>Demo</a>
             <a href={project.githubLink}>Source</a>
           </div>
+          <button className="close-btn" onClick={onClose}>
+            Close
+          </button>
         </div>
       </div>
     </section>

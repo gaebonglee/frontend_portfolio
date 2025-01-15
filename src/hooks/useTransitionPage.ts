@@ -8,13 +8,13 @@ export function useTransitionPage(selectProject: number | null) {
     if (selectProject !== null) {
       gsap.to(transitionRef.current, {
         x: 0, // 화면에 나타남
-        duration: 0.5,
+        duration: 0.6,
         ease: "power3.out",
       });
     } else {
       gsap.to(transitionRef.current, {
         x: "100%", // 화면 밖으로 이동
-        duration: 0.5,
+        duration: 0.6,
         ease: "power3.in",
       });
     }
