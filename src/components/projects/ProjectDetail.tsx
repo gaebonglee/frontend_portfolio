@@ -9,24 +9,14 @@ interface ProjectDetailProps {
 
 export default function ProjectDetail({
   project,
-  onClose,
-}: ProjectDetailProps) {
-  const [isClosing, setIsClosing] = useState(false);
 
-  const handleClose = () => {
-    setIsClosing(true);
-    setTimeout(() => {
-      onClose();
-    }, 500);
-  };
+}: ProjectDetailProps) {
+
 
   return (
     <section className="section--project-detail-Home">
       <div className="padding-global is-full-height">
         <div className="detail-content">
-          <button className="detail-content-close-btn" onClick={handleClose}>
-            Close
-          </button>
           <div className="detail-content--info">
             <div className="title-wrap">
               <div className="title">{project.title}</div>

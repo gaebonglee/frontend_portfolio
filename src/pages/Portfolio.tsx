@@ -1,16 +1,16 @@
-import MainSection from "./Main";
-import AboutSection from "./About";
-import UseSkills from "components/skills/UseSkills";
 import "../styles/pages/Portfolio.scss";
-import SlideSection from "./Slide";
+import MainSection from "./MainSection";
+import AboutSection from "./AboutSection";
+import ProjectSection from "./ProjectSection";
+import SkillsSection from "./SkillsSection";
 
 export default function Portfolio() {
   return (
     <main className="main-container">
       <MainSection />
       <AboutSection />
-      <UseSkills />
-      <SlideSection />
+      <SkillsSection />
+      <ProjectSection />
     </main>
   );
 }
