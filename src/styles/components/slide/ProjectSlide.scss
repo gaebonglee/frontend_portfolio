@@ -1,23 +1,39 @@
 @import "styles/variables";
 
+.slides-container {
+  position: relative;
+}
+
+.proejct-slide-container {
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  opacity: 1;
+  visibility: visible;
+}
+.proejct-slide-container.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .proejct-slides {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .proejct-slide {
-  background-color: $default-pink;
+  background-color: $black;
+  color: white;
   transition: 0.3s ease;
 }
 
 .proejct-slide.active {
-  background: $black;
-  color: white;
+  background: $default-pink;
+  color: $black;
+  scale: (1.2);
   cursor: pointer;
 }
 
 .proejct-slide-content {
-  border-top: 1px solid $black;
+  border-top: 1px solid $default-pink;
   display: flex;
   padding: 2rem;
   .title-wrap,
