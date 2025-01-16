@@ -9,7 +9,7 @@ export default function ProjectSlide() {
     null
   );
   const [isHidden, setIsHidden] = useState(false);
-  
+  let hoverTimeout: NodeJS.Timeout | null = null;
 
   useEffect(() => {
     if (selectedProject) {
@@ -30,8 +30,16 @@ export default function ProjectSlide() {
                 className={`proejct-slide ${
                   activeSlide === project.id ? "active" : ""
                 }`}
-                onMouseEnter={() => setActiveSlide(project.id)}
-                onMouseLeave={() => setActiveSlide(null)}
+                onMouseEnter={() => {
+                  hoverTimeout = setTimeout(
+                    () => setActiveSlide(project.id),
+                    250
+                  );
+                }}
+                onMouseLeave={() => {
+                  if (hoverTimeout) clearTimeout(hoverTimeout);
+                  setActiveSlide(null);
+                }}
                 onClick={() => setSelectedProject(project)}
               >
                 <div className="proejct-slide-content">
