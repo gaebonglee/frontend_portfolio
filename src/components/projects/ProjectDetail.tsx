@@ -1,18 +1,11 @@
 import { ProjectType } from "data/Project";
 import "../../styles/components/projects/ProjectsDetail.scss";
-import { useState } from "react";
 
 interface ProjectDetailProps {
   project: ProjectType;
-  onClose: () => void;
 }
 
-export default function ProjectDetail({
-  project,
-
-}: ProjectDetailProps) {
-
-
+export default function ProjectDetail({ project }: ProjectDetailProps) {
   return (
     <section className="section--project-detail-Home">
       <div className="padding-global is-full-height">
@@ -56,7 +49,9 @@ export default function ProjectDetail({
               <a href={project.githubLink}>Source</a>
             </div>
           </div>
-          <div className="detail-content--img"></div>
+          <div className="detail-content--img">
+            <img src={project.image} alt={project.title} />
+          </div>
         </div>
       </div>
     </section>

@@ -1,0 +1,155 @@
+// @import "styles/variables";
+
+// .section--projects-Home {
+//   background-color: $black;
+//   .intro {
+//     padding: 20vh 0;
+//     h1 {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       color: $default-pink;
+//       font-size: 3.5rem;
+//       font-weight: 600;
+//     }
+//   }
+//   .outro {
+//     padding: 40vh 0;
+//     .text-wrap {
+//       display: flex;
+//       flex-direction: column;
+//       gap: 2rem;
+//       justify-content: center;
+//       align-items: center;
+//     }
+//     h3 {
+//       color: #eddae2;
+//       font-size: 2.5rem;
+//       font-weight: 600;
+//     }
+//     p {
+//       color: #cfa0ab;
+//       font-size: 1.2rem;
+//     }
+//     .link-github {
+//       border: 2px solid $default-pink;
+//       border-radius: 10px;
+//       padding: 10px;
+//       transition: background-color 0.3s ease;
+//       text-align: center;
+
+//       a {
+//         font-weight: 600;
+//         text-decoration: none;
+//         color: $default-pink;
+//         transition: color 0.3s ease;
+//       }
+
+//       &:hover {
+//         background-color: #eddae2;
+
+//         a {
+//           color: $black;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// // ---------------- cloums ---------------- \\
+// .cloumns {
+//   width: 100%;
+//   max-width: 1200px;
+//   position: relative;
+//   padding: 20vh 0;
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+//   gap: 2vw;
+//   margin: 0 auto;
+// }
+// .cloumn {
+//   width: 100%;
+//   position: relative;
+//   display: grid;
+//   gap: 2vw;
+//   grid-template-columns: 100%;
+//   will-change: transform;
+// }
+
+// .cloumn--item {
+//   margin: 0;
+//   position: relative;
+//   z-index: 1;
+// }
+// .cloumn--item-imgwrap {
+//   width: 100%;
+//   aspect-ratio: 0.75;
+//   height: auto;
+//   position: relative;
+//   overflow: hidden;
+//   border-radius: 15px;
+// }
+
+// .cloumn--item-img img {
+//   position: absolute;
+//   top: calc(-1 * 30px);
+//   left: calc(-1 * 30px);
+//   height: calc(100% + 30px * 2);
+//   width: calc(100% + 30px * 2);
+//   background-size: cover;
+//   background-position: 50% 20%;
+//   backface-visibility: hidden;
+// }
+
+// // 배열의 빈 공간 가상 요소 추가
+// .cloumn--item.placeholder,
+// .cloumn--item-imgwrap.placeholder,
+// .cloumn--item-img.placeholder,
+// .cloumn--item-img img.placeholder {
+//   visibility: hidden; // 보이지 않게 설정
+//   pointer-events: none; // 클릭 차단
+//   background: transparent; // 배경 없음
+// }
+
+// // overlay project detail
+// .project-detail-overlay {
+//   width: 100%;
+//   height: 100%;
+//   aspect-ratio: 0.75;
+//   position: relative;
+//   overflow: hidden;
+//   border-radius: 15px;
+//   background-color: rgba(0, 0, 0, 0.75);
+//   color: white;
+// }
+
+// .cloumn--item:hover .cloumn--item-img img {
+//   filter: blur(5px);
+// }
+
+// .overlay-content {
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   gap: 1rem;
+//   cursor: pointer;
+
+//   h3 {
+//     font-size: 1.5rem;
+//     font-weight: 600;
+//     color: $default-pink;
+//   }
+//   p {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     color: $point-pink;
+//   }
+// }
