@@ -34,7 +34,7 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
               </div>
               <div className="content-label">
                 <p className="info-label">프레임워크</p>
-                <a>{project.library}</a>
+                <a>{project.framework}</a>
               </div>
             </div>
 

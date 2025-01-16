@@ -1,5 +1,5 @@
 import Projects from "components/projects/Projects";
-import "../styles/pages/Projects.scss";
+import "../styles/pages/ProjectsSection.scss";
 
 export default function ProjectSection() {
   return (
