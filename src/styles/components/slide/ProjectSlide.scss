@@ -9,9 +9,11 @@
   background-color: $default-pink;
   transition: 0.3s ease;
 }
+
 .proejct-slide.active {
   background: $black;
   color: white;
+  cursor: pointer;
 }
 
 .proejct-slide-content {
@@ -45,60 +47,6 @@
       width: 50%;
       aspect-ratio: 4 / 3;
       object-fit: cover;
-    }
-  }
-}
-
-// detail
-.project-detail {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.8);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  z-index: 1000;
-  transition: opacity 0.5s ease, transform 0.5s ease;
-
-  img {
-    max-width: 80%;
-    max-height: 60%;
-    border-radius: 10px;
-  }
-
-  .project-detail-content {
-    margin-top: 20px;
-    text-align: center;
-
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1.2rem;
-      line-height: 1.5;
-    }
-  }
-
-  .close-btn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: white;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: 0.3s ease;
-
-    &:hover {
-      background: gray;
     }
   }
 }
