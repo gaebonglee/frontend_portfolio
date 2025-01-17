@@ -30,9 +30,9 @@
     justify-content: center;
     align-items: center;
     color: $default-pink;
-    font-size: 3.5rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    color: white;
+    color: $dark-pink;
   }
 }
 
@@ -50,12 +50,12 @@
     align-items: center;
   }
   h3 {
-    color: #eddae2;
+    color: $default-pink;
     font-size: 2.5rem;
     font-weight: 600;
   }
   p {
-    color: #cfa0ab;
+    color: $point-pink;
     font-size: 1.2rem;
   }
   .link-github {
@@ -73,7 +73,7 @@
     }
 
     &:hover {
-      background-color: #eddae2;
+      background-color: $default-pink;
 
       a {
         color: $black;
@@ -97,6 +97,8 @@
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: $default-pink;
+    font-size: 3.5rem;
+    font-weight: 600;
   }
 }

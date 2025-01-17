@@ -12,10 +12,14 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
         <div className="detail-content-container">
           <div className="detail-content">
             <div className="detail-content--top">
-              <div className="title-wrap">
-                <div className="title">{project.title}</div>
-                <div className="subTitle">{project.subTitle}</div>
+              <div className="title-container">
+                <div className="title-wrap">
+                  <div className="title">{project.title}</div>
+                  <div className="subTitle">{project.subTitle}</div>
+                </div>
+                <div className="project-id">0{project.id}</div>
               </div>
+
               <div className="content-info-wrap">
                 <div className="content-label">
                   <p className="info-label">타입</p>

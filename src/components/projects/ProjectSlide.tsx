@@ -26,7 +26,7 @@ export default function ProjectSlide() {
           scrub: 1,
           snap: 1 / (panels.length - 1),
           end: () => "+=" + slider.offsetWidth,
-          markers: true,
+          // markers: true,
         },
       });
     }, componentRef);
@@ -38,11 +38,11 @@ export default function ProjectSlide() {
       <div className="project-slides">
         <div className="slides-component" ref={componentRef}>
           <div className="intro">
-            <h1>PROJECTS</h1>
+            <h1>SCROLL DOWN</h1>
           </div>
           <div ref={sliderRef} className="container">
             <div className="project-slide scoll-down--bg">
-              <h1>SCROLL DOWN</h1>
+              <h1>PROJECTS</h1>
               <div className="scroll-down">
                 <div className="arrow"></div>
               </div>
