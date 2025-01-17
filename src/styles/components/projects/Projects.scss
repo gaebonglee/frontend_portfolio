@@ -1,24 +1,76 @@
 @import "styles/variables";
 
 .section--projects-Home {
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
-  min-height: 100vh;
-}
+  overflow-y: visible;
+  position: relative;
+  overflow-x: hidden;
+  height: 100%;
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $default-pink;
+      font-size: 3.5rem;
+      font-weight: 600;
+    }
+  }
+  .outro {
+    display: flex;
+    height: 100vh;
+    .text-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+    }
+    h3 {
+      color: #eddae2;
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+    p {
+      color: #cfa0ab;
+      font-size: 1.2rem;
+    }
+    .link-github {
+      border: 2px solid $default-pink;
+      border-radius: 10px;
+      padding: 10px;
+      transition: background-color 0.3s ease;
+      text-align: center;
 
-.project-detail--horizontal-scroll {
+      a {
+        font-weight: 600;
+        text-decoration: none;
+        color: $default-pink;
+        transition: color 0.3s ease;
+      }
+
+      &:hover {
+        background-color: #eddae2;
+
+        a {
+          color: $black;
+        }
+      }
+    }
+  }
+}
+.continue-scroll {
+  width: 600vw;
+  height: 100vh;
   display: flex;
-  flex-wrap: nowrap;
-  width: 100%;
-  height: 300vh;
+  flex-wrap: wrap;
 }
 
 .project-item {
-  flex: 0 0 auto;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }

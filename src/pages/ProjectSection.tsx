@@ -7,6 +7,7 @@ export default function ProjectSection() {
       <div className="padding-global is-full-height">
         <div className="container-large is-full-height is-center">
           <Projects />
+        
         </div>
       </div>
     </section>
