@@ -33,9 +33,8 @@ export default function ProjectSlide() {
 
   return (
     <div className="App" ref={componentRef}>
-      <div className="firstContainer">
-        <h1>Testing horizontal scrolling w/ three sections</h1>
-        <h2>First Container</h2>
+      <div className="intro">
+        <h1>PROJECTS</h1>
       </div>
       <div ref={sliderRef} className="container">
         <div className="description panel blue">
