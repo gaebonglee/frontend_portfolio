@@ -11,7 +11,8 @@
 }
 
 .container {
-  width: 600vw;
+  //width값 프로젝트 갯수 + 1 개로 조절 필요
+  width: 900vw;
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
@@ -37,6 +38,8 @@
 
 .outro {
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   background: $black;
   .text-wrap {
