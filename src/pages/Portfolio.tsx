@@ -8,12 +8,10 @@ import ProjectSlide from "components/projects/ProjectSlide";
 export default function Portfolio() {
   return (
     <main className="main-container">
-      {/* <MainSection />
+      <MainSection />
       <AboutSection />
       <SkillsSection />
-      <ProjectSection /> */}
-      <ProjectSlide/>
-
+      <ProjectSection />
     </main>
   );
 }
