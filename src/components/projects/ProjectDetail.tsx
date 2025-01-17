@@ -39,6 +39,7 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
             </div>
 
             <div className="description">
+             <p className="info-label">주요 내용</p>
               <ul>
                 <li>{project.description}</li>
               </ul>

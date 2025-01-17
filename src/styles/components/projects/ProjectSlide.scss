@@ -23,13 +23,22 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: yellow;
+  background: $black;
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $default-pink;
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: white;
+  }
 }
 
 .outro {
   display: flex;
   height: 100vh;
-  background: yellow;
+  background: $black;
   .text-wrap {
     display: flex;
     flex-direction: column;
@@ -75,15 +84,16 @@
   height: 100vh;
 }
 
-.red {
-  background: red;
-}
-.orange {
-  background: orange;
-}
-.purple {
-  background: purple;
-}
 .scoll-down--bg {
-  background-color: blue;
+  background-color: $black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
 }

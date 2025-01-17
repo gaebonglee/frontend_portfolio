@@ -36,17 +36,15 @@ export default function ProjectSlide() {
   return (
     <section className="section--project-slides-Home">
       <div className="project-slides">
-        <div className="App" ref={componentRef}>
+        <div className="slides-component" ref={componentRef}>
           <div className="intro">
             <h1>PROJECTS</h1>
           </div>
           <div ref={sliderRef} className="container">
             <div className="project-slide scoll-down--bg">
-              <div>
-                SCROLL DOWN
-                <div className="scroll-down">
-                  <div className="arrow"></div>
-                </div>
+              <h1>SCROLL DOWN</h1>
+              <div className="scroll-down">
+                <div className="arrow"></div>
               </div>
             </div>
             {projects.map((project) => (
