@@ -50,7 +50,15 @@ export default function ProjectSlide() {
         <div className="panel orange">TWO</div>
         <div className="panel purple">THREE</div>
       </div>
-      <div className="lastContainer">Last Container</div>
+      <div className="outro">
+        <div className="text-wrap">
+          <h3>THANK YOU</h3>
+          <p>Made by @geabonglee</p>
+          <div className="link-github">
+            <a href="https://github.com/gaebonglee">Git Hub</a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

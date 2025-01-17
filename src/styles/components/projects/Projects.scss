@@ -20,48 +20,48 @@
       font-weight: 600;
     }
   }
-  .outro {
-    display: flex;
-    height: 100vh;
-    .text-wrap {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      justify-content: center;
-      align-items: center;
-    }
-    h3 {
-      color: #eddae2;
-      font-size: 2.5rem;
-      font-weight: 600;
-    }
-    p {
-      color: #cfa0ab;
-      font-size: 1.2rem;
-    }
-    .link-github {
-      border: 2px solid $default-pink;
-      border-radius: 10px;
-      padding: 10px;
-      transition: background-color 0.3s ease;
-      text-align: center;
+  // .outro {
+  //   display: flex;
+  //   height: 100vh;
+  //   .text-wrap {
+  //     display: flex;
+  //     flex-direction: column;
+  //     gap: 2rem;
+  //     justify-content: center;
+  //     align-items: center;
+  //   }
+  //   h3 {
+  //     color: #eddae2;
+  //     font-size: 2.5rem;
+  //     font-weight: 600;
+  //   }
+  //   p {
+  //     color: #cfa0ab;
+  //     font-size: 1.2rem;
+  //   }
+  //   .link-github {
+  //     border: 2px solid $default-pink;
+  //     border-radius: 10px;
+  //     padding: 10px;
+  //     transition: background-color 0.3s ease;
+  //     text-align: center;
 
-      a {
-        font-weight: 600;
-        text-decoration: none;
-        color: $default-pink;
-        transition: color 0.3s ease;
-      }
+  //     a {
+  //       font-weight: 600;
+  //       text-decoration: none;
+  //       color: $default-pink;
+  //       transition: color 0.3s ease;
+  //     }
 
-      &:hover {
-        background-color: #eddae2;
+  //     &:hover {
+  //       background-color: #eddae2;
 
-        a {
-          color: $black;
-        }
-      }
-    }
-  }
+  //       a {
+  //         color: $black;
+  //       }
+  //     }
+  //   }
+  // }
 }
 .continue-scroll {
   width: 600vw;
