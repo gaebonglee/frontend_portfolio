@@ -2,6 +2,8 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useLayoutEffect, useRef } from "react";
 import "../../styles/components/projects/ProjectSlide.scss";
+import ProjectDetail from "./ProjectDetail";
+import { projects } from "data/Project";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -45,9 +47,14 @@ export default function ProjectSlide() {
             </div>
           </div>
         </div>
-        <div className="panel red">ONE</div>
+        {projects.map((project) => (
+          <div key={project.id} className="panel">
+            <ProjectDetail project={project} />
+          </div>
+        ))}
+        {/* <div className="panel red">ONE</div>
         <div className="panel orange">TWO</div>
-        <div className="panel purple">THREE</div>
+        <div className="panel purple">THREE</div> */}
       </div>
       <div className="outro">
         <div className="text-wrap">
