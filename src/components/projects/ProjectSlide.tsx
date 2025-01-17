@@ -39,7 +39,7 @@ export default function ProjectSlide() {
         <h1>PROJECTS</h1>
       </div>
       <div ref={sliderRef} className="container">
-        <div className="description panel blue">
+        <div className="panel scoll-down--bg">
           <div>
             SCROLL DOWN
             <div className="scroll-down">
