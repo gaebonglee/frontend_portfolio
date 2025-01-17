@@ -1,19 +1,13 @@
 @import "styles/variables";
 
-html {
-  overflow-y: scroll;
+.section--project-slides-Home {
   height: 100%;
   -webkit-overflow-scrolling: touch;
-  overflow-scrolling: touch;
 }
-body {
+.project-slides {
   overflow-y: visible;
   position: relative;
   overflow-x: hidden;
-}
-html,
-body {
-  margin: 0;
 }
 
 .container {
@@ -76,7 +70,7 @@ body {
   }
 }
 
-.panel {
+.project-slide {
   width: 100vw;
   height: 100vh;
 }
