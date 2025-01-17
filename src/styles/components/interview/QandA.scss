@@ -17,7 +17,6 @@
   min-height: 150vh;
   display: block;
   position: relative;
-  top: auto;
 }
 
 .about-wrap {
@@ -29,7 +28,8 @@
   height: auto;
   top: 2rem;
   bottom: 2rem;
-  width: 1060px;
+  width: 90%;
+  max-width: 1060px;
   margin: 0 auto;
   gap: 1rem;
   .about-wrap-content {

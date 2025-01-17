@@ -12,14 +12,6 @@
     height: 100%;
     object-fit: cover;
   }
-  h1 {
-    width: 100%;
-    color: $default-pink;
-    font-size: 48vw;
-    font-weight: 400;
-    text-align: center;
-    margin: 0;
-  }
 }
 
 .useSkills-container {
@@ -32,6 +24,15 @@
     height: 100vh;
     will-change: transform;
   }
+}
+
+.big-font {
+  width: 100%;
+  color: $default-pink;
+  font-size: 45rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
 }
 
 .skill-card {
@@ -70,4 +71,48 @@
 #card-7 {
   top: 10%;
   left: 30%;
+}
+@media (max-width: 768px) {
+  .useSkills-container {
+    height: 200vh;
+  }
+
+  .wrapper {
+    width: 300vw;
+  }
+
+  .skill-card {
+    width: 150px;
+    height: 150px;
+  }
+
+  // 모바일에서는 정렬을 좀 더 중앙으로
+  #card-1 {
+    top: 10%;
+    left: 15%;
+  }
+  #card-2 {
+    top: 25%;
+    left: 40%;
+  }
+  #card-3 {
+    top: 35%;
+    left: 55%;
+  }
+  #card-4 {
+    top: 50%;
+    left: 20%;
+  }
+  #card-5 {
+    top: 65%;
+    left: 50%;
+  }
+  #card-6 {
+    top: 75%;
+    left: 70%;
+  }
+  #card-7 {
+    top: 15%;
+    left: 30%;
+  }
 }

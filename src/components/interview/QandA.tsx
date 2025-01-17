@@ -3,7 +3,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { QuestionTexts, AnswerTexts } from "data/AboutText";
 import useScrollState from "hooks/useScrollState";
-import "../../styles/components/about/QandA.scss";
+import "../../styles/components/interview/QandA.scss";
 
 gsap.registerPlugin(ScrollTrigger);
 
