@@ -19,41 +19,47 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
                 </div>
                 <div className="project-id">0{project.id}</div>
               </div>
-
-              <div className="content-info-wrap">
-                <div className="content-label">
-                  <p className="info-label">타입</p>
-                  <a>{project.period}</a>
-                </div>
-                <div className="content-label">
-                  <p className="info-label">사용 스킬</p>
-                  <a>{project.period}</a>
-                </div>
-                <div className="content-label">
-                  <p className="info-label">기여도</p>
-                  <a>{project.period}</a>
-                </div>
-              </div>
             </div>
             <div className="detail-content--bottom">
-              <div className="detail-content--description-wrap">
-                <div className="description">
-                  <p className="info-label">주요 내용</p>
-                  <ul>
-                    <li>{project.description}</li>
-                    <li>{project.description}</li>
-                    <li>{project.description}</li>
-                    <li>{project.description}</li>
-                  </ul>
+              <div className="detail-content--left">
+                <div className="content-info-wrap">
+                  <div className="content-label">
+                    <p className="info-label">타입</p>
+                    <a>{project.type}</a>
+                  </div>
+                  <div className="content-label">
+                    <p className="info-label">사용 스킬</p>
+                    <a>{project.skills}</a>
+                  </div>
+                  <div className="content-label">
+                    <p className="info-label">기여도</p>
+                    <a>{project.contribution}</a>
+                  </div>
                 </div>
-                <div className="link-wrap">
-                  <a href={project.projectLink}>Demo</a>
-                  <a href={project.githubLink}>Source</a>
+                <div className="detail-content--description-wrap">
+                  <div className="description">
+                    <p className="info-label">주요 내용</p>
+                    <ul>
+                      {Array.isArray(project.description) ? (
+                        project.description.map((desc, index) => (
+                          <li key={index}>{desc}</li>
+                        ))
+                      ) : (
+                        <li>{project.description}</li>
+                      )}
+                    </ul>
+                  </div>
+                  <div className="link-wrap">
+                    <a href={project.projectLink}>Demo</a>
+                    <a href={project.githubLink}>Source</a>
+                  </div>
                 </div>
               </div>
 
-              <div className="detail-content--img">
-                <img src={project.image} alt={project.title} />
+              <div className="detail-content--right">
+                <div className="detail-content--img">
+                  <img src={project.image} alt={project.title} />
+                </div>
               </div>
             </div>
           </div>
