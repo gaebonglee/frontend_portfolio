@@ -17,10 +17,16 @@ export const projects = [
     id: 1,
     title: "TMP",
     subTitle: "Trainer Matching Project",
-    description: "팀프로젝트로 진행한 회원-트레이너 매칭사이트 입니다.",
+    description: [
+      "소비자를 보호하고 정보 비대칭을 해소하기 위해 더 많은 정보와 선택지를 제공하는 플랫폼을 개발했습니다.",
+      "카카오톡, 네이버, 구글을 통한 소셜 로그인 기능을 지원합니다.",
+      "VR 기능을 활용하여 트레이너가 속한 센터의 전경을 묘사할 수 있습니다.",
+      "트레이너 및 헬스장 정보를 열람하고, 날짜·시간·목표를 설정하여 예약할 수 있습니다.",
+      "트레이너 및 사용자의 CRUD(생성, 조회, 수정, 삭제) 기능을 구현했습니다.",
+    ],
     type: "PC",
     period: "2024.04.01 ~ 2024.05.17",
-    skills: "Figma, React, Scss, JavaScript, MySQL",
+    skills: "Figma, React, Scss, JavaScript, API(Map, Login), MySQL",
     image: "/images/project/TMP.png",
     projectLink:
       "https://gayounglee.notion.site/Trainer-Matching-Project-PPT-6c02aff850184dbeb843dff6fd695f81",
@@ -31,11 +37,15 @@ export const projects = [
     id: 2,
     title: "LUKS",
     subTitle: "ShoppingMall",
-    description:
-      "개인프로젝트로 문자인증과 주소찾기 API를 활용한 쇼핑몰 사이트입니다.",
+    description: [
+      "다음 주소찾기 API를 적용하여 정확한 배송지 입력을 지원했습니다.",
+      "비밀번호 재입력 검증 기능을 통해 입력 오류를 방지하고 사용자 경험을 개선했습니다.",
+      "CoolSMS API를 활용한 문자인증 기능을 적용하여 회원가입 시 본인 인증 절차를 강화했습니다. ",
+      "상품 좋아요, 장바구니, 구매, 후기 등록 기능을 구현하여 사용자 편의성과 쇼핑 경험을 향상시켰습니다.",
+    ],
     type: "PC",
-    period: "2024.05.25 ~ 2024.06.14 (continue)",
-    skills: "React, Scss, JavaScript, API, MySQL",
+    period: "2024.05.25 ~ 2024.06.14 (진행중)",
+    skills: "React, Scss, JavaScript, API(CoolSMS, Daum), MySQL",
     image: "/images/qna/vision.png",
     projectLink:
       "https://gayounglee.notion.site/Luks-PPT-2ecadfde50dd4f1f9fc3e6fe6043708d?pvs=4",
@@ -46,15 +56,19 @@ export const projects = [
     id: 3,
     title: "Portfolio",
     subTitle: "WebSite",
-    description:
-      "웹사이트 기준으로 제작된 포트폴리오 사이트입니다.(반응형 업데이트 예정),웹사이트 기준으로 제작된 포트폴리오 사이트입니다.(반응형 업데이트 예정)",
-    type: "",
+    description: [
+      "반응형 웹사이트를 구현하여 다양한 디바이스에서 최적화된 UI를 제공합니다.",
+      "프로젝트별 코드 및 데모를 쉽게 확인할 수 있도록 구성했습니다.",
+      "GSAP를 활용하여 부드러운 스크롤 효과를 적용한 포트폴리오 사이트입니다.",
+      "GitHub Pages를 이용해 프로젝트를 배포했습니다.",
+    ],
+    type: "PC, Tablet (반응형 웹)",
     period: "2025.01.13 ~ 2025.01.18",
     skills: "React, TypeScript, Scss, GSAP",
     image: "/images/project/TMP.png",
     projectLink: "https://gaebonglee.github.io/gayoung_portfolio/",
     githubLink: "https://github.com/gaebonglee/gayoung_portfolio.git",
-    contribution: "",
+    contribution: "프론트 100%",
   },
 
   {
@@ -62,15 +76,15 @@ export const projects = [
     title: "StarBucks",
     subTitle: "WebSite",
     description:
-      "스타벅스 홈페이지 클론코딩입니다. css와 javascript를 활용하여 애니메이션을 구현했습니다다.",
-    type: "",
+      "스타벅스 홈페이지 클론코딩입니다. css와 javascript를 활용하여 애니메이션을 구현했습니다.",
+    type: "PC, Tablet (반응형 웹)",
     period: "2024.06.28 ~ 2024.07.01",
-    skills: "HTML5, CSS3, JavaScript",
+    skills: "HTML, CSS, JavaScript, Swiper, GSAP",
     image: "/images/project/TMP.png",
     projectLink:
       "https://gaebonglee.github.io/gayoung_portfolio/kurly/kurlyCategory/category.html",
     githubLink: "https://github.com/gaebonglee/kurly.git",
-    contribution: "",
+    contribution: "프론트 100%",
   },
 
   {
@@ -95,24 +109,12 @@ export const projects = [
   },
   {
     id: 6,
-    title: "G Blog",
-    subTitle: "WebSite Blog",
-    description:
-      "반응형으로 제작된 blog-app입니다. Firebase로 백엔드 연동하여 사용자 및 내용 관리가 가능합니다.",
-    type: "",
-    period: "2025.01.09 ~ 2025.01.10",
-    skills: "React, TypeScript, CSS3, Firebase",
-    image: "/images/project/TMP.png",
-    projectLink: "https://react-blog-app-c3c2f.web.app/",
-    githubLink: "https://github.com/gaebonglee/blog-app",
-    contribution: "",
-  },
-  {
-    id: 7,
     title: "Movie App",
     subTitle: "OMDB",
-    description:
-      "OMDB MOVIE API를 활용하여 영화 검색 사이트를 제작하였습니다. 영문으로 영화제목 입력 시 확인할 수 있습니다. 짧은 줄거리, 평점, 출연배우 등의 정보를 확인할 수 있습니다.",
+    description: [
+      "OMDb API를 활용하여 Vanilla JavaScript 기반의 영화 검색 애플리케이션을 개발했습니다.",
+      "영화 상세 페이지에서 줄거리, 출연 배우, 평점 등의 정보를 제공합니다.",
+    ],
     type: "",
     period: "2025.01.01 ~ 2025.01.02",
     skills: "HTML5, CSS3, JavaScript",
@@ -121,34 +123,50 @@ export const projects = [
     githubLink: "https://github.com/gaebonglee/kurly.git",
     contribution: "",
   },
-  {
-    id: 8,
-    title: "StarBucks",
-    subTitle: "WebSite",
-    description:
-      "스타벅스 홈페이지 클론코딩입니다. css와 javascript를 활용하여 애니메이션을 구현했습니다다.",
-    type: "",
-    period: "2024.06.28 ~ 2024.07.01",
-    skills: "HTML5, CSS3, JavaScript",
-    image: "/images/project/TMP.png",
-    projectLink:
-      "https://gaebonglee.github.io/gayoung_portfolio/kurly/kurlyCategory/category.html",
-    githubLink: "https://github.com/gaebonglee/kurly.git",
-    contribution: "",
-  },
-  {
-    id: 8,
-    title: "To Do List",
-    subTitle: "Task Management",
-    description:
-      "반응형으로 구현한 My To Do List 입니다. 할 일의 추가, 완료, 삭제 가능합니다.",
-    type: "",
-    period: "2024.07.18 ~ 2024.07.19",
-    skills: "HTML5, CSS3, JavaScript",
-    image: "/images/project/TMP.png",
-    projectLink:
-      "https://gaebonglee.github.io/gayoung_portfolio/toDoList/myToDoList.html",
-    githubLink: "https://github.com/gaebonglee/toDoList.git",
-    contribution: "",
-  },
+  // {
+  //   id: 7,
+  //   title: "Movie App",
+  //   subTitle: "OMDB",
+  //   description: [
+  //     "OMDb API를 활용하여 Vanilla JavaScript 기반의 영화 검색 애플리케이션을 개발했습니다.",
+  //     "영화 상세 페이지에서 줄거리, 출연 배우, 평점 등의 정보를 제공합니다.",
+  //   ],
+  //   type: "",
+  //   period: "2025.01.01 ~ 2025.01.02",
+  //   skills: "HTML, CSS, JavaScript",
+  //   image: "/images/project/TMP.png",
+  //   projectLink: `https://gaebonglee.github.io/gayoung_portfolio/kurly/timerProduct/timerProduct.html`,
+  //   githubLink: "https://github.com/gaebonglee/kurly.git",
+  //   contribution: "",
+  // },
+  // {
+  //   id: 8,
+  //   title: "StarBucks",
+  //   subTitle: "WebSite",
+  //   description:
+  //     "스타벅스 홈페이지 클론코딩입니다. css와 javascript를 활용하여 애니메이션을 구현했습니다다.",
+  //   type: "",
+  //   period: "2024.06.28 ~ 2024.07.01",
+  //   skills: "HTML5, CSS3, JavaScript",
+  //   image: "/images/project/TMP.png",
+  //   projectLink:
+  //     "https://gaebonglee.github.io/gayoung_portfolio/kurly/kurlyCategory/category.html",
+  //   githubLink: "https://github.com/gaebonglee/kurly.git",
+  //   contribution: "",
+  // },
+  // {
+  //   id: 9,
+  //   title: "To Do List",
+  //   subTitle: "Task Management",
+  //   description:
+  //     "반응형으로 구현한 My To Do List 입니다. 할 일의 추가, 완료, 삭제 가능합니다.",
+  //   type: "",
+  //   period: "2024.07.18 ~ 2024.07.19",
+  //   skills: "HTML5, CSS3, JavaScript",
+  //   image: "/images/project/TMP.png",
+  //   projectLink:
+  //     "https://gaebonglee.github.io/gayoung_portfolio/toDoList/myToDoList.html",
+  //   githubLink: "https://github.com/gaebonglee/toDoList.git",
+  //   contribution: "",
+  // },
 ];
